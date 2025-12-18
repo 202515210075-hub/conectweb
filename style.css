@@ -25,7 +25,6 @@ body {
     margin: 0 auto;
 }
 
-/* TOPO / MENU DESKTOP */
 .planos {
     text-align: center;
     padding: 30px 20px;
@@ -476,13 +475,6 @@ p {
     margin-left: 50px;
 }
 
-#paragrafocont {
-    font-size: 24px;
-    padding: 30px;
-    text-align: justify;
-    align-items: center;
-}
-
 .caracteristicas {
     background-color: #F7F7FF;
     width: 700px;
@@ -496,14 +488,13 @@ p {
     justify-content: center;
     align-items: center;
 }
-#aberturamenu{
+
+#aberturamenu {
     display: none;
 }
 
-/* ===================== RESPONSIVO ===================== */
-
-/* até 1024px: ajustar topo e textos grandes */
 @media screen and (max-width: 1025px) {
+
     .planos,
     .escolha,
     .perfeito {
@@ -541,7 +532,6 @@ p {
     }
 }
 
-/* até 768px: coluna, largura 100%, fontes menores */
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -637,100 +627,90 @@ p {
     }
 }
 
-/* até 425px: tudo bem compacto, 1 coluna e menu hamburguer */
 @media screen and (max-width: 426px) {
 
-    /* topo em COLUNA: logo em cima, menu embaixo */
-    #topo .container{
-        display:flex;
-        flex-direction: column;      /* antes era linha */
-        align-items:center;          /* centraliza tudo */
-        justify-content:center;
+    #topo .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 10px 10px;
         gap: 8px;
     }
 
-    .grid-topo{
+    .grid-topo {
         grid-template-columns: auto;
         background-color: #1A1423;
     }
 
-    /* LOGO CENTRALIZADA */
-    .imagem{
+    .imagem {
         float: none;
-        text-align:center;
+        text-align: center;
     }
 
-    .imagem img{
-        width: 180px; /* menor no celular */
+    .imagem img {
+        width: 180px;
     }
 
-    /* MENU MOBILE – checkbox + hambúrguer ABAIXO da logo */
     #menu-topo {
         flex: 1;
         width: 100%;
         display: flex;
-        flex-direction: column;     /* botão em cima, ul abaixo */
+        flex-direction: column;
         align-items: center;
     }
 
-    /* esconde o checkbox */
-    #aberturamenu{
-        display:none;
+    #aberturamenu {
+        display: none;
     }
 
-    /* botão hambúrguer */
-    #botaomenu{
-        display:flex;
-        width:32px;
-        height:32px;
+    #botaomenu {
+        display: flex;
+        width: 32px;
+        height: 32px;
         flex-direction: column;
         justify-content: space-around;
-        padding:4px;
-        border:1px solid white;
-        border-radius:6px;
-        margin:5px 0;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 6px;
+        margin: 5px 0;
         cursor: pointer;
     }
 
-    .linha{
-        height:3px;
-        background-color:white;
+    .linha {
+        height: 3px;
+        background-color: white;
     }
 
-    /* lista de links FECHADA, logo abaixo do botão, empurrando o conteúdo quando abre */
-    #menu-topo > ul{
-        display:flex;
-        flex-direction:column;
+    #menu-topo > ul {
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        height:0;
+        height: 0;
         overflow: hidden;
-        transition:height 0.4s ease;
-        background-color:#1A1423;
-        padding:0 10px;
-        margin:0;
+        transition: height 0.4s ease;
+        background-color: #1A1423;
+        padding: 0 10px;
+        margin: 0;
         list-style: none;
         gap: 0;
-        width:100%;
+        width: 100%;
     }
 
-    #menu-topo li{
-        border-bottom:1px dashed white;
-        padding:8px 0;
-        margin:0;
-        text-indent:0;
+    #menu-topo li {
+        border-bottom: 1px dashed white;
+        padding: 8px 0;
+        margin: 0;
+        text-indent: 0;
     }
 
-    #menu-topo #assine{
-        margin:10px auto 12px auto;
+    #menu-topo #assine {
+        margin: 10px auto 12px auto;
     }
 
-    /* quando o checkbox estiver marcado, abre o menu (altura maior) */
-    #aberturamenu:checked ~ ul{
-       height: 470px; /* aumenta para caber todos os itens */
+    #aberturamenu:checked ~ ul {
+        height: 470px;
     }
-
-    /* ---- resto dos ajustes de texto/sections que você já tinha ---- */
 
     .planos,
     .escolha,
@@ -794,4 +774,149 @@ p {
     }
 }
 
+@media screen and (max-width: 426px) {
 
+    #topo .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        gap: 8px;
+    }
+
+    .grid-topo {
+        grid-template-columns: 1fr;
+        background-color: #1A1423;
+    }
+
+    .imagem {
+        float: none;
+        text-align: center;
+        display: block;
+    }
+
+    .imagem img {
+        width: 200px;
+    }
+
+    #menu-topo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aberturamenu {
+        display: none;
+    }
+
+    #botaomenu {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 6px;
+        margin: 5px 0;
+        cursor: pointer;
+    }
+
+    .linha {
+        height: 3px;
+        background-color: white;
+    }
+
+    #menu-topo > ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.4s ease;
+        background-color: #1A1423;
+        padding: 0 10px;
+        margin: 0;
+        list-style: none;
+        gap: 0;
+        width: 100%;
+    }
+
+    #menu-topo li {
+        border-bottom: 1px dashed white;
+        padding: 8px 0;
+        margin: 0;
+        text-indent: 0;
+    }
+
+    #menu-topo #assine {
+        margin: 10px auto 12px auto;
+    }
+
+    #aberturamenu:checked ~ ul {
+        height: 420px;
+    }
+
+    .planos,
+    .escolha,
+    .perfeito {
+        font-size: 2.3em;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2,
+    .ideal,
+    .soluçao,
+    .internet,
+    .equipe {
+        font-size: 22px;
+        padding: 0 8px;
+        min-width: auto;
+    }
+
+    p,
+    .palavra,
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    .caracteristicas {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 0;
+    }
+
+    #content,
+    #linha,
+    #botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao,
+    .bt,
+    #assine,
+    #contratar,
+    #ver,
+    .bt-rodape,
+    .bt-outro {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .internet,
+    .ideal,
+    .soluçao,
+    .equipe {
+        min-width: auto;
+    }
+
+    .lista {
+        margin-left: 20px;
+    }
+}

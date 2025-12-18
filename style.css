@@ -12,8 +12,7 @@
     --Preto: #000000;
     --fonte-titulo: "Geologica", sans-serif;
     --fonte-texto: "Inter", sans-serif;
-    --fonte-subtitulo: " " Montserrat", sans-serif;"
-
+    --fonte-subtitulo: "Montserrat", sans-serif;
 }
 
 body {
@@ -26,6 +25,7 @@ body {
     margin: 0 auto;
 }
 
+/* TOPO / MENU DESKTOP */
 .planos {
     text-align: center;
     padding: 30px 20px;
@@ -37,12 +37,10 @@ body {
 
 .ideal {
     text-align: center;
-    font-size: 30px;
-    color: #969494;
-    font-weight: bold;
     font-size: 41px;
-    margin-top: 10px;
+    color: #969494;
     font-weight: 400;
+    margin-top: 10px;
     min-width: 800px;
     display: flex;
     flex-direction: column;
@@ -77,10 +75,9 @@ li {
     align-items: center;
     text-align: center;
     border-radius: 20px;
-
 }
 
-.botao>a {
+.botao > a {
     color: #000000;
     text-decoration: none;
     font-size: 20px;
@@ -100,10 +97,9 @@ li {
     align-items: center;
     text-align: center;
     border-radius: 20px;
-
 }
 
-.bt>a {
+.bt > a {
     color: #000000;
     text-decoration: none;
     font-size: 20px;
@@ -112,7 +108,7 @@ li {
 
 .grid-topo {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     background-color: #1A1423;
 }
 
@@ -120,12 +116,14 @@ li {
     float: right;
 }
 
-#menu-topo>ul {
+#menu-topo > ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 #menu-topo a {
@@ -162,7 +160,6 @@ li {
     color: white;
     align-items: center;
     text-align: center;
-
 }
 
 .texto-roxo {
@@ -170,12 +167,10 @@ li {
     background: linear-gradient(90deg, white, #5D2BD0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 h1 {
     font-size: 70px;
-
 }
 
 h2 {
@@ -183,14 +178,14 @@ h2 {
     margin-top: 30px;
     font-weight: 400;
 }
-h3{
+
+h3 {
     font-size: 40px;
 }
 
-#assine>a {
+#assine > a {
     color: black;
     text-decoration: none;
-
 }
 
 #assine a:hover {
@@ -210,11 +205,9 @@ h3{
     align-items: center;
     text-align: center;
     border-radius: 400px;
-
-
 }
 
-#contratar>a {
+#contratar > a {
     color: #000000;
     text-decoration: none;
     font-size: 20px;
@@ -237,18 +230,14 @@ h3{
     color: #000000;
     font-weight: bold;
     margin: 0;
-
 }
 
 .soluçao {
     text-align: center;
-    text-align: center;
-    font-size: 30px;
-    color: #969494;
-    font-weight: bold;
     font-size: 41px;
-    margin-top: 30px;
+    color: #969494;
     font-weight: 400;
+    margin-top: 30px;
     min-width: 800px;
     display: flex;
     flex-direction: column;
@@ -267,11 +256,9 @@ p {
     text-align: center;
     padding: 20px 20px;
     color: #969494;
-    text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 41px;
     margin-top: 30px;
-    font-weight: 400;
     min-width: 800px;
     display: flex;
     flex-direction: column;
@@ -292,7 +279,7 @@ p {
     border-radius: 20px;
 }
 
-#ver>a {
+#ver > a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -315,18 +302,14 @@ p {
     background: linear-gradient(90deg, white, #999999);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .equipe {
     text-align: center;
-    text-align: center;
-    font-size: 40px;
-    color: #969494;
-    font-weight: bold;
     font-size: 41px;
-    margin-top: 15px;
+    color: #969494;
     font-weight: 400;
+    margin-top: 15px;
     min-width: 800px;
     display: flex;
     flex-direction: column;
@@ -350,7 +333,7 @@ p {
     margin-right: 30px;
 }
 
-.bt-rodape>a {
+.bt-rodape > a {
     color: #000000;
     text-decoration: none;
 }
@@ -380,7 +363,7 @@ p {
     text-decoration: none;
 }
 
-.bt-outro>a {
+.bt-outro > a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -412,7 +395,6 @@ p {
     color: #F8D92A;
     border: black;
     font-size: 40px;
-
 }
 
 #img4 {
@@ -434,7 +416,6 @@ p {
 #content {
     display: flex;
     justify-content: space-around;
-
 }
 
 #botoes {
@@ -446,61 +427,371 @@ p {
     background: linear-gradient(to top, #E07619, #D0A922);
     width: 130px;
     border-radius: 180px;
-    
 }
 
 .bolao {
-     background: linear-gradient(to top, #E07619, #D0A922);
-     width: 150px;
-     border-radius: 170px;
+    background: linear-gradient(to top, #E07619, #D0A922);
+    width: 150px;
+    border-radius: 170px;
 }
-#pagina{
+
+.pagina {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
-.palavra{
+
+.palavra {
     font-size: 30px;
     color: #969494;
-
 }
-.titulo{
+
+.titulo {
     font-size: 60px;
 }
-.cor-laranja{
+
+.cor-laranja {
     color: #EA8B1E;
     border-radius: 40px;
 }
-.subtitulo{
+
+.subtitulo {
     font-size: 30px;
     color: #969494;
 }
-.provedor{
+
+.provedor {
     text-align: center;
     color: var(--Laranja);
     border-bottom: 2px solid black;
-
 }
-.paragrafo{
+
+.paragrafo {
     color: black;
     text-align: center;
 }
-.lista{
-    margin-left: 50px ;
+
+.lista {
+    margin-left: 50px;
 }
-.caracteristicas{
+
+#paragrafocont {
+    font-size: 24px;
+    padding: 30px;
+    text-align: justify;
+    align-items: center;
+}
+
+.caracteristicas {
     background-color: #F7F7FF;
     width: 700px;
     text-align: center;
     margin: 50px;
     border-radius: 40px;
-    border: var(--Laranja) 2px solid ;
+    border: var(--Laranja) 2px solid;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+#aberturamenu{
+    display: none;
+}
+
+/* ===================== RESPONSIVO ===================== */
+
+/* até 1024px: ajustar topo e textos grandes */
+@media screen and (max-width: 1025px) {
+    .planos,
+    .escolha,
+    .perfeito {
+        font-size: 4em;
+        padding: 40px 10px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2,
+    .ideal,
+    .soluçao,
+    .internet,
+    .equipe {
+        font-size: 32px;
+        min-width: auto;
+        padding: 0 10px;
+    }
+
+    p,
+    .palavra,
+    .subtitulo {
+        font-size: 24px;
+    }
+
+    .caracteristicas {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    #content {
+        gap: 20px;
+    }
+}
+
+/* até 768px: coluna, largura 100%, fontes menores */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #banner {
+        flex-direction: column;
+        padding: 40px 10px;
+        min-height: 500px;
+        text-align: center;
+    }
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #linha {
+        flex-wrap: wrap;
+        margin: 20px 10px;
+    }
+
+    .itens {
+        margin: 20px 10px;
+    }
+
+    .caracteristicas {
+        width: 95%;
+        padding: 30px 20px;
+    }
+
+    .planos,
+    .escolha,
+    .perfeito {
+        font-size: 3em;
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2,
+    .ideal,
+    .soluçao,
+    .internet,
+    .equipe {
+        font-size: 26px;
+        min-width: auto;
+    }
+
+    p,
+    .palavra,
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 20px;
+        text-indent: 0;
+        padding: 0 10px;
+    }
+
+    .botao,
+    .bt,
+    #assine,
+    #contratar,
+    #ver,
+    .bt-rodape,
+    .bt-outro {
+        width: 70%;
+        max-width: 320px;
+        margin: 10px auto;
+    }
+
+    .bolinha {
+        width: 100px;
+    }
+
+    .bolao {
+        width: 120px;
+    }
+
+    .rodape {
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+
+    .informacoes {
+        flex-wrap: wrap;
+        padding: 20px 10px;
+    }
+}
+
+/* até 425px: tudo bem compacto, 1 coluna e menu hamburguer */
+@media screen and (max-width: 426px) {
+
+    /* topo em COLUNA: logo em cima, menu embaixo */
+    #topo .container{
+        display:flex;
+        flex-direction: column;      /* antes era linha */
+        align-items:center;          /* centraliza tudo */
+        justify-content:center;
+        padding: 10px 10px;
+        gap: 8px;
+    }
+
+    .grid-topo{
+        grid-template-columns: auto;
+        background-color: #1A1423;
+    }
+
+    /* LOGO CENTRALIZADA */
+    .imagem{
+        float: none;
+        text-align:center;
+    }
+
+    .imagem img{
+        width: 180px; /* menor no celular */
+    }
+
+    /* MENU MOBILE – checkbox + hambúrguer ABAIXO da logo */
+    #menu-topo {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;     /* botão em cima, ul abaixo */
+        align-items: center;
+    }
+
+    /* esconde o checkbox */
+    #aberturamenu{
+        display:none;
+    }
+
+    /* botão hambúrguer */
+    #botaomenu{
+        display:flex;
+        width:32px;
+        height:32px;
+        flex-direction: column;
+        justify-content: space-around;
+        padding:4px;
+        border:1px solid white;
+        border-radius:6px;
+        margin:5px 0;
+        cursor: pointer;
+    }
+
+    .linha{
+        height:3px;
+        background-color:white;
+    }
+
+    /* lista de links FECHADA, logo abaixo do botão, empurrando o conteúdo quando abre */
+    #menu-topo > ul{
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+        height:0;
+        overflow: hidden;
+        transition:height 0.4s ease;
+        background-color:#1A1423;
+        padding:0 10px;
+        margin:0;
+        list-style: none;
+        gap: 0;
+        width:100%;
+    }
+
+    #menu-topo li{
+        border-bottom:1px dashed white;
+        padding:8px 0;
+        margin:0;
+        text-indent:0;
+    }
+
+    #menu-topo #assine{
+        margin:10px auto 12px auto;
+    }
+
+    /* quando o checkbox estiver marcado, abre o menu (altura maior) */
+    #aberturamenu:checked ~ ul{
+       height: 470px; /* aumenta para caber todos os itens */
+    }
+
+    /* ---- resto dos ajustes de texto/sections que você já tinha ---- */
+
+    .planos,
+    .escolha,
+    .perfeito {
+        font-size: 2.3em;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2,
+    .ideal,
+    .soluçao,
+    .internet,
+    .equipe {
+        font-size: 22px;
+        padding: 0 8px;
+        min-width: auto;
+    }
+
+    p,
+    .palavra,
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    .caracteristicas {
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 0;
+    }
+
+    #content,
+    #linha,
+    #botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao,
+    .bt,
+    #assine,
+    #contratar,
+    #ver,
+    .bt-rodape,
+    .bt-outro {
+        width: 90%;
+        max-width: 280px;
+    }
+
+    .internet,
+    .ideal,
+    .soluçao,
+    .equipe {
+        min-width: auto;
+    }
+
+    .lista {
+        margin-left: 20px;
+    }
+}
+
 

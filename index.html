@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title> Conect Web - Internet de Alta Velocidade </title>
     <link rel="stylesheet" href="style.css">
@@ -10,26 +11,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
-    <header id="topo">
-        <div class="container grid-topo">
-            <h1 class="imagem"> <a href="index.html"> <img src="imagens/logo.png" width="340px"> </a> </h1>
-            <nav id="menu-topo">
-                <ul>
-                    <li> <a href=" "> Início </a> </li>
-                    <li> <a href=" "> Público </a> </li>
-                    <li> <a href=" "> Planos </a> </li>
-                    <li> <a href="serviço.html"> Serviços </a> </li>
-                    <li> <a href="contrato.html"> Contratar </a> </li>
-                    <li> <a href=" "> Contato </a> </li>
+<header id="topo">
+  <div class="container grid-topo">
+      <a href="index.html" class="imagem">
+        <img src="imagens/logo.png" width="340px">
+      </a>
 
-                    <div id="assine"> <a href="index.html"> assine já </a></div>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <nav id="menu-topo">
+      <input type="checkbox" id="aberturamenu">
+      <label id="botaomenu" for="aberturamenu">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+      </label>
+
+      <ul>
+        <li><a href="">Início</a></li>
+        <li><a href="">Público</a></li>
+        <li><a href="">Planos</a></li>
+        <li><a href="serviço.html">Serviços</a></li>
+        <li><a href="contrato.html">Contratar</a></li>
+        <li><a href="">Contato</a></li>
+        <div id="assine"><a href="index.html">assine já</a></div>
+      </ul>
+    </nav>
+  </div>
+</header>
     <main id="Conteudo">
 
         <section id="banner">
@@ -37,7 +48,8 @@
             <div class="container">
                 <h1> Internet <span class="texto-roxo">Ultrarrápida</span> </h1>
                 <br>
-                <h2> Conecte-se ao futuro com a internet mais rápida e estável da <br>região. Planos que cabem no seu
+                <h2> Conecte-se ao futuro com a internet mais rápida e estável da <br>região. Planos que
+                    cabem no seu
                     bolso e velocidade que <br> supera suas expectativas. </h2>
                 <br><br><br><br>
                 <div id="linha">
@@ -47,70 +59,74 @@
             </div>
 
         </section>
-            <br>
+        <br>
         </section>
         <section id="voce">
             <div class="container">
                 <h1 class="perfeito">Perfeito Para Você</h1>
                 <br>
-                <div id="pagina">
-                <p class="soluçao">Oferecemos soluções personalizadas para diferentes <br>necessidades de conectividade
-                </p>>
-                <br>
-                <div class="caracteristicas">
-                <img class="bolao" src="imagens/👨_👩_👧_👦.png">
-                <br>
-                <h1 class="titulo">Famílias</h1>
-                <br>
-                <h3 class="palavra">Internet estável para toda a família se conectar, trabalhar em casa, estudar online e se divertir com streaming em <br> alta qualidade.</h3>
-                <br>
-                <ul>
-                    <li>Múltiplos dispositivos conectados</li>
-                    <li>Streaming 4K sem travamentos</li>
-                    <li>Jogos online sem lag</li>
-                    <li> Home office eficiente</li>
-                    <li>Controle parental gratuito</li>
+                <div class="pagina">
+                    <p class="soluçao">Oferecemos soluções personalizadas para diferentes <br>necessidades de
+                        conectividade
+                    </p>>
                     <br>
-                    <li class="bt"> <a href="index.html"> Ver Planos para a Família </a></li>
-                </ul>
-                </div>
-                <div class="caracteristicas">
-                <img class="bolao" src="imagens/🏢.png">
-                <br>
-                <h1 class="titulo"> Empresas </h1>
-                <br>
-                <h3 class="palavra" >Soluções corporativas com velocidade garantida, IP fixo e suporte prioritário para manter sua empresa sempre conectada.</h3>
-                <br>
-                <ul>
-                    <li>Velocidade simétrica garantida</li>
-                    <li>IP fixo incluso</li>
-                    <li>Suporte técnico 24/7</li>
-                    <li> SLA de 99,9% de disponibilidade</li>
-                    <li>Backup de conectividade</li>
+                    <div class="caracteristicas">
+                        <img class="bolao" src="imagens/👨_👩_👧_👦.png">
+                        <br>
+                        <h1 class="titulo">Famílias</h1>
+                        <br>
+                        <h3>Internet estável para toda a família se conectar, trabalhar em casa, estudar
+                            online e se divertir com streaming em <br> alta qualidade.</h3>
+                        <br>
+                        <ul>
+                            <li>Múltiplos dispositivos conectados</li>
+                            <li>Streaming 4K sem travamentos</li>
+                            <li>Jogos online sem lag</li>
+                            <li> Home office eficiente</li>
+                            <li>Controle parental gratuito</li>
+                            <br>
+                            <li class="bt"> <a href="index.html"> Ver Planos para a Família </a></li>
+                        </ul>
+                    </div>
+                    <div class="caracteristicas">
+                        <img class="bolao" src="imagens/🏢.png">
+                        <br>
+                        <h1 class="titulo"> Empresas </h1>
+                        <br>
+                        <h3 class="palavra">Soluções corporativas com velocidade garantida, IP fixo e suporte
+                            prioritário para manter sua empresa sempre conectada.</h3>
+                        <br>
+                        <ul>
+                            <li>Velocidade simétrica garantida</li>
+                            <li>IP fixo incluso</li>
+                            <li>Suporte técnico 24/7</li>
+                            <li> SLA de 99,9% de disponibilidade</li>
+                            <li>Backup de conectividade</li>
+                            <br>
+                            <li class="bt"> <a href="index.html"> Ver Planos Corporativos</a></li>
+                        </ul>
+                    </div>
                     <br>
-                    <li class="bt"> <a href="index.html"> Ver Planos Corporativos</a></li>
-                </ul>
-                </div>
-                <br>
-                <div class="caracteristicas">
-                <img class="bolao" src="imagens/💻.png">
-                <br>
-                <h1  class="titulo" >Freelancers</h1>
-                <br>
-                <h3 class="palavra" > Internet de alta performance para profissionais independentes que dependem de conexão estável para seus <br> projetos.</h3>
-                <br>
-                <ul>
-                    <li>Upload rápido para envios</li>
-                    <li>Videoconferências em HD</li>
-                    <li>Trabalho em nuvem eficiente</li>
-                    <li> Flexibilidade de planos</li>
-                    <li> Preços competitivos</li>
-                    <br>
-                    <li class="bt"> <a href="index.html"> Ver Planos Freelancers </a></li>
-                </div>
+                    <div class="caracteristicas">
+                        <img class="bolao" src="imagens/💻.png">
+                        <br>
+                        <h1 class="titulo">Freelancers</h1>
+                        <br>
+                        <h3 class="palavra"> Internet de alta performance para profissionais independentes que dependem
+                            de conexão estável para seus <br> projetos.</h3>
+                        <br>
+                        <ul>
+                            <li>Upload rápido para envios</li>
+                            <li>Videoconferências em HD</li>
+                            <li>Trabalho em nuvem eficiente</li>
+                            <li> Flexibilidade de planos</li>
+                            <li> Preços competitivos</li>
+                            <br>
+                            <li class="bt"> <a href="index.html"> Ver Planos Freelancers </a></li>
+                    </div>
 
-                </ul>
-            </div>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="escolha">
@@ -119,85 +135,86 @@
             <p class="internet"> Oferecemos muito mais que internet. Nossa missão é conectar <br> você ao que realmente
                 importa</p>
         </section>
-        <div>
-            <div  class="caracteristicas">
-            <img class="bolinha" src="imagens/🚀.png">
-             <h3> Velocidade Real</h3>
+        <div class="pagina">
+            <div class="caracteristicas">
+                <img class="bolinha" src="imagens/🚀.png">
+                <h3> Velocidade Real</h3>
                 <p class="velocidade">Nossa fibra óptica garante a <br>velocidade contratada 24 <br>horas por dia, todos
                     os dias do <br>ano.</p>
             </div>
-                <br><br>
-                <div  class="caracteristicas">
+            <br><br>
+            <div class="caracteristicas">
                 <img class="bolinha" src="imagens/💰.png">
                 <h3>Melhor Preço </h3>
-                <p> Planos com o melhor <br> custo-benefício da região, sem taxas ocultas  <br> ou surpresas na conta. </p>
+                <p> Planos com o melhor <br> custo-benefício da região, sem taxas ocultas <br> ou surpresas na conta.
+                </p>
             </div>
-                <br><br>
-                <div  class="caracteristicas">
+            <br><br>
+            <div class="caracteristicas">
                 <img class="bolinha" src="imagens/⚡.png">
                 <h3> Instalação Rápida </h3>
                 <p> Instalação profissional em até <br> 48h após a contratação, sem <br> custo adicional.</p>
             </div>
-                <br><br>
-                <div  class="caracteristicas">
+            <br><br>
+            <div class="caracteristicas">
                 <img class="bolinha" src="imagens/🛠️.png">
                 <h3> Suporte Técnico </h3>
                 <p> Equipe especializada <br> disponível 24h para resolver <br> qualquer problema <br> rapidamente.</p>
             </div>
-                <br><br>
-        <div class="caracteristicas">
+            <br><br>
+            <div class="caracteristicas">
                 <img class="bolinha" src="imagens/📶.png">
                 <h3> Cobertura Total </h3>
                 <p>Nossa rede de fibra óptica <br> cobre toda a região com <br> sinal forte e estável.</p>
-        </div>
-                <br><br>
-                <div class="caracteristicas">
+            </div>
+            <br><br>
+            <div class="caracteristicas">
                 <img class="bolinha" src="imagens/🔒.png">
                 <h3> Segurança Total </h3>
                 <p>Rede protegida com os mais <br> altos padrões de segurança e <br> criptografia.</p>
                 <br><br>
-                </div>
-                <div class="rodape">
-                    <br><br>
-                    <h1 class="contato"> Entre em Contato </h1>
-                    <p class="equipe"> Nossa equipe está pronta para atender você! </p>
-                    <br><br>
-                    <div class="informacoes">
-                        <div id="content">
-                            <div class="itens">
-                                <h3 class="img"> <img class="ajuste" src="imagens/📞.png" alt="">Telefone</h3>
-                                <br>
-                                <p> (77) 4000-1234 <br> Seg a Sex: 8h às 18h </p>
-                            </div>
-                            <br><br>
-                            <div class="itens">
-                                <h3 class="img"> <img class="ajuste" src="imagens/💬.png" alt=""> WhatsApp </h3>
-                                <br>
-                                <p> (77) 99999-8888 <br> 24 horas por dia </p>
-                            </div>
-                            <div class="itens">
-                                <h3 class="img"> <img class="ajuste" src="imagens/✉️  (1).png" alt=""> E-mail </h3>
-                                <br>
-                                <p> contato@conectweb.com.br <br> Resposta em até 2h </p>
-                            </div>
-                            <div class="itens">
-                                <h3 class="img"> <img id="img4" class="ajuste" src="imagens/🏢.png" alt="">Escritório
-                                </h3>
-                                <br>
-                                <p> Rua das Conexões, 123 <br> Seg a Sex: 8h às 18h </p>
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                    <br><br>
-                    <div id="botoes">
-                        <div class="bt-rodape"> <a href="index.html"> Contratar Agora </a> </div>
-                        <div class="bt-outro"> <a href="index.html"> Chat Online </a> </div>
-                    </div>
-
-
-                </div>
+            </div>
         </div>
+            <footer class="rodape">
+                <br><br>
+                <h1 class="contato"> Entre em Contato </h1>
+                <p class="equipe"> Nossa equipe está pronta para atender você! </p>
+                <br><br>
+                <div class="informacoes">
+                    <div id="content">
+                        <div class="itens">
+                            <h3 class="img"> <img class="ajuste" src="imagens/📞.png" alt="">Telefone</h3>
+                            <br>
+                            <p> (77) 4000-1234 <br> Seg a Sex: 8h às 18h </p>
+                        </div>
+                        <br><br>
+                        <div class="itens">
+                            <h3 class="img"> <img class="ajuste" src="imagens/💬.png" alt=""> WhatsApp </h3>
+                            <br>
+                            <p> (77) 99999-8888 <br> 24 horas por dia </p>
+                        </div>
+                        <div class="itens">
+                            <h3 class="img"> <img class="ajuste" src="imagens/✉️  (1).png" alt=""> E-mail </h3>
+                            <br>
+                            <p> contato@conectweb.com.br <br> Resposta em até 2h </p>
+                        </div>
+                        <div class="itens">
+                            <h3 class="img"> <img id="img4" class="ajuste" src="imagens/🏢.png" alt="">Escritório
+                            </h3>
+                            <br>
+                            <p> Rua das Conexões, 123 <br> Seg a Sex: 8h às 18h </p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br><br>
+                <div id="botoes">
+                    <div class="bt-rodape"> <a href="index.html"> Contratar Agora </a> </div>
+                    <div class="bt-outro"> <a href="index.html"> Chat Online </a> </div>
+                </div>
+
+
+            </footer>
     </main>
 
 </body>
